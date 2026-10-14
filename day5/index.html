@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLP User Directory - Martine Otirno Kungu</title>
+    <script src="users.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PLP User Directory</h1>
+        <p>JavaScript Fetch API Practice</p>
+        <p>Created by Martine Otirno Kungu</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Users</h2>
+
+            <button id="load-users" type="button">Load Users</button>
+
+            <p>
+                <label for="filter-input">Filter users by name:</label>
+                <input
+                    type="text"
+                    id="filter-input"
+                    placeholder="Enter a user's name"
+                >
+            </p>
+
+            <p id="status" role="status" aria-live="polite">
+                Click Load Users to retrieve the user directory.
+            </p>
+
+            <ul id="users-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuickNotes | PLP Web Development</p>
+    </footer>
+</body>
+</html>

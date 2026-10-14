@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martine's JavaScript Study Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Martine's QuickNotes</h1>
+        <p>Power Learn Project (PLP) | JavaScript Study Notes</p>
+        <p class="student-name">Created by Martine Otirno Kungu</p>
+        <button id="theme-toggle" type="button">Dark mode</button>
+    </header>
+
+    <main>
+        <section class="intro-card">
+            <h2>My JavaScript Learning Journey</h2>
+            <p>
+                Welcome to my personal study space for learning JavaScript
+                through the Power Learn Project (PLP). Here, I can write,
+                revise and save notes about programming concepts and practical
+                exercises.
+            </p>
+        </section>
+
+        <section class="study-card">
+            <h2>JavaScript Study Topics</h2>
+            <p>Use these topics to guide your revision.</p>
+
+            <ul class="study-topics">
+                <li>
+                    <h3>1. Variables and Data Types</h3>
+                    <p>Learn about let, const, strings, numbers and booleans.</p>
+                    <code>let student = "Martine";</code>
+                </li>
+
+                <li>
+                    <h3>2. Conditional Statements</h3>
+                    <p>Use if, else and switch to make decisions in programs.</p>
+                    <code>if (score >= 50) { /* passed */ }</code>
+                </li>
+
+                <li>
+                    <h3>3. Loops</h3>
+                    <p>Repeat tasks using for, while and for...of loops.</p>
+                    <code>for (let i = 0; i < 3; i++) { }</code>
+                </li>
+
+                <li>
+                    <h3>4. Arrays and Objects</h3>
+                    <p>Store and organize collections of data.</p>
+                    <code>const topics = ["HTML", "CSS", "JavaScript"];</code>
+                </li>
+
+                <li>
+                    <h3>5. Functions</h3>
+                    <p>Write reusable blocks of code that perform tasks.</p>
+                    <code>function greet() { return "Hello!"; }</code>
+                </li>
+
+                <li>
+                    <h3>6. DOM and Events</h3>
+                    <p>Interact with webpage elements and respond to user actions.</p>
+                    <code>button.addEventListener("click", doSomething);</code>
+                </li>
+            </ul>
+        </section>
+
+        <section class="note-card">
+            <h2>My Personal Study Notes</h2>
+            <p>
+                Write your JavaScript definitions, code examples,
+                assignment reminders or questions below.
+            </p>
+
+            <label for="note-text">Write your study note (maximum 200 characters):</label>
+            <textarea
+                id="note-text"
+                rows="8"
+                maxlength="200"
+                placeholder="Example: JavaScript arrays store multiple values in a single variable..."
+            ></textarea>
+
+            <div class="counters" aria-live="polite">
+                <p id="char-count">0 / 200 characters</p>
+                <p id="word-count">0 words</p>
+            </div>
+
+            <button id="clear-btn" type="button">Clear note</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Martine Otirno Kungu | PLP JavaScript Study Notes</p>
+    </footer>
+</body>
+</html>
